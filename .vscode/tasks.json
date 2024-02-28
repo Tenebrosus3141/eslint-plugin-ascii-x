@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "npm: build:tsc",
+			"detail": "tsc -b",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"type": "npm",
+			"script": "build:tsc",
+			"problemMatcher": [],
+			"dependsOn": [
+				"Clean build",
+				"Clean dist"
+			]
+		},
+		{
+			"label": "Clean build",
+			"type": "shell",
+			"windows": {
+				"command": "Remove-Item \"${workspaceFolder}\\build\\*\" -Recurse -Force -ErrorAction Ignore; $null"
+			}
+		},
+		{
+			"label": "npm: build:dist",
+			"detail": "rollup -c",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"type": "npm",
+			"script": "build:dist",
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean dist",
+			"type": "shell",
+			"windows": {
+				"command": "Remove-Item \"${workspaceFolder}\\dist\\*\" -Recurse -Force -ErrorAction Ignore; $null"
+			}
+		}
+	]
+}

@@ -1,0 +1,2 @@
+console.log("foo \u{1F3F3}\uFE0F\u200D\u{1F308} \u{1F3F3}\uFE0F\u200D\u{1F308}\
+  \u{1F3F3}\uFE0F\u200D\u{1F308}bar\u{1F3F3}\uFE0F\u200D\u{1F308}");

@@ -1,0 +1,11 @@
+{
+    "extends": "../tsconfig-base.json",
+    "compilerOptions": {
+        "composite": true,
+
+        "allowJs": false,
+        "sourceMap": true,
+        "outDir": "../build/lib"
+    },
+    "include": ["./**/*.ts", "./**/*.d.ts"],
+  }

@@ -1,0 +1,22 @@
+{
+    "extends": "./tsconfig-base.json",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "sourceMap": true,
+        "declaration": false,
+        "noEmit": true,
+
+
+
+        "allowJs": true
+    },
+    "files": [
+        "./jest.config.ts",
+        "./rollup.config.mjs",
+        "./.eslintrc.cjs"
+    ],
+    "references": [
+        { "path": "./lib" },
+    ],
+}

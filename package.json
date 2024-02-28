@@ -1,0 +1,58 @@
+{
+  "name": "eslint-plugin-ascii-x",
+  "version": "1.0.0",
+  "description": "ESLint plugin to escape or delete non-ASCII characters, using autofixes",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "ascii",
+    "unicode"
+  ],
+  "author": "Tenebrosus3141",
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@stylistic/eslint-plugin": "^1.6.2",
+    "@types/eslint": "^8.56.3",
+    "@types/estree": "^1.0.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "eslint": "^8.57.0",
+    "eslint-doc-generator": "^1.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.0.0-3",
+    "eslint-plugin-self": "^1.2.1",
+    "globals": "^14.0.0",
+    "jest": "^29.7.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^4.12.0",
+    "rollup-plugin-node-externals": "^7.0.1",
+    "rollup-plugin-ts": "^3.4.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.2"
+  },
+  "scripts": {
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint .",
+    "test": "jest",
+    "update:eslint-docs": "eslint-doc-generator",
+    "build:tsc": "tsc -b",
+    "build:dist": "rollup -c"
+  }
+}
