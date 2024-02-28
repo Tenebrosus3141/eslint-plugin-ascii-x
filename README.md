@@ -1,5 +1,7 @@
 # eslint-plugin-ascii-x
 
+**ASCII** fi**X**er
+
 ESLint plugin to delete or escape non-ASCII characters, using autofixes
 
 ## Installation
@@ -48,7 +50,7 @@ Then configure the rule.
 
 | Name                         | Description   | 🔧 |
 | :--------------------------- | :------------ | :- |
-| [ascii](docs/rules/ascii.md) | Enforce ASCII | 🔧 |
+| [ascii](https://github.com/Tenebrosus3141/eslint-plugin-ascii-x/blob/master/docs/rules/ascii.md) | Enforce ASCII | 🔧 |
 
 <!-- end auto-generated rules list -->
 

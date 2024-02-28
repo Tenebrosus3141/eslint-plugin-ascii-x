@@ -11,6 +11,8 @@
   ],
   "author": "Tenebrosus3141",
   "license": "ISC",
+  "homepage": "https://github.com/Tenebrosus3141/eslint-plugin-ascii-x",
+  "repository": "github:Tenebrosus3141/eslint-plugin-ascii-x",
   "type": "commonjs",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",

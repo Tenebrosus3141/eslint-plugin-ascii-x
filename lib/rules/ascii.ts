@@ -10,13 +10,13 @@ export const enum Messages {
 
 export default {
     meta: {
-        type: "problem", // `problem`, `suggestion`, or `layout`
+        type: "problem",
         docs: {
             description: "Enforce ASCII",
-            url: undefined, // URL to the documentation page for this rule
+            url: "https://github.com/Tenebrosus3141/eslint-plugin-ascii-x/blob/master/docs/rules/ascii.md",
         },
         fixable: "code",
-        schema: [], // Add a schema if the rule has options
+        schema: [],
         messages: {
             [Messages.NON_ASCII]: "Non-ASCII sequence '{{ text }}'",
         },
