@@ -4,6 +4,27 @@
 
 ESLint plugin to delete or escape non-ASCII characters, using autofixes
 
+## Example using rule (`ascii-x/ascii`)
+
+Example of **original** code:
+
+```js
+/** foo 🅱ar */
+console.log("¡Hello World!🏳️‍🌈");
+let a = 2; // 🦊Answer
+console.log(`🔢1+1=${a}`);
+```
+
+Example of **corrected** code:
+
+```js
+/** foo ar */
+console.log("\xA1Hello World!\u{1F3F3}\uFE0F\u200D\u{1F308}");
+const a = 2; // Answer
+console.log(`\u{1F522}1+1=${a}`);
+```
+
+
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
