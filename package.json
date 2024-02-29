@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ascii-x",
-  "version": "1.0.0",
+  "version": "1.0.0-release",
   "description": "ESLint plugin to escape or delete non-ASCII characters, using autofixes",
   "keywords": [
     "eslint",
