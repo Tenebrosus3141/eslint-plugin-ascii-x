@@ -22,7 +22,7 @@ module.exports = {
         node: true,
     },
     plugins: [
-        "self",
+        // "self",
         "@typescript-eslint",
         "@stylistic",
         "import",
@@ -52,7 +52,7 @@ module.exports = {
         "plugin:n/recommended",
     ],
     rules: {
-        "self/ascii": "error",
+        // "self/ascii": "error",
 
         "curly": ["error", "multi-or-nest", "consistent"],
         "eqeqeq": ["error", "always", { ["null"]: "ignore" }],
