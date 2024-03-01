@@ -1,6 +1,8 @@
-# eslint-plugin-ascii-x
+# ASCII fiXer (`eslint-plugin-ascii-x`)
 
-**ASCII** fi**X**er
+[![NPM Version](https://img.shields.io/npm/v/eslint-plugin-ascii-x?logo=npm&logoColor=white&color=CB3837
+)](https://www.npmjs.com/package/eslint-plugin-ascii-x) [![ESLint Version](https://img.shields.io/npm/dependency-version/eslint-plugin-ascii-x/peer/eslint?logo=eslint&logoColor=white&color=4B32C3)](https://www.npmjs.com/package/eslint) [![Node Current](https://img.shields.io/node/v/eslint-plugin-ascii-x?logo=node.js&logoColor=white&color=339933)](https://nodejs.org/)
+
 
 ESLint plugin to delete or escape non-ASCII characters, using autofixes
 
