@@ -30,10 +30,14 @@ module.exports = {
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
+        ecmaVersion: "latest",
         project: ["./tsconfig-configs.json", "./lib/tsconfig.json", "./tests/tsconfig.json"],
         tsconfigRootDir: __dirname,
     },
     settings: {
+        "node": {
+            version: "21.0.0",
+        },
         "import/resolver": {
             typescript: true,
             node: true,
